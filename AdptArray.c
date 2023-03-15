@@ -79,7 +79,12 @@ Result SetAdptArrayAt(PAdptArray arr, int index, PElement new_p)
         {
             return FAIL;
         }
-        arr->p = temp_p; 
+        arr->p = temp_p;
+        // in this part we initialize the new indexs of array that we get from the realloc
+        for (int i = arr->count_size; i < temp ; i++) 
+        {
+            arr->p[i]=NULL;
+        } 
         arr->count_size = temp;
     }
     if (arr->p[index] != NULL) // Free the old member if it exists 
