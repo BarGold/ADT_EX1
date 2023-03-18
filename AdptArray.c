@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include "AdptArray.h"
 
+// To solve this assignment , i was helped by targeted questions by my private teacher
+
 // struct defin AdptArray_
 typedef struct AdptArray_
 {
@@ -40,7 +42,7 @@ void DeleteAdptArray(PAdptArray arr)
 {
     if (arr == NULL) // if the array is empty 
     {
-        printf("Array is empty");
+        
     }
     else
     {
@@ -133,7 +135,7 @@ void PrintDB(PAdptArray arr)
 {
     if (arr == NULL) // if the array is empty 
     {
-        printf("Array is empty");
+        
     }
     // go over the array and if the pointer of the array point on struct (like book / person)
     // we print the struct (element)
